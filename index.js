@@ -1,9 +1,8 @@
-// Code your solution here
 let arrayToLowerCase = []
 
 function findMatching(drivers, string) {
-    let even = drivers.filter(s => {
-        return s.toLowerCase() == string.toLowerCase();
+    let even = drivers.filter(n => {
+        return n.toLowerCase() == string.toLowerCase();
     });
 
     return even
@@ -11,8 +10,8 @@ function findMatching(drivers, string) {
 
 
 function fuzzyMatch(drivers, string) {
-    let even = drivers.filter(s => {
-        return s.search(string);
+    let even = drivers.filter(n => {
+        return n.search(string);
     });
 
     return even
@@ -20,8 +19,8 @@ function fuzzyMatch(drivers, string) {
 
 
 function matchName(drivers, string) {
-    let even = drivers.filter(s => {
-        return s.name == string;
+    let even = drivers.filter(n => {
+        return n.name == string;
     });
 
     return even
