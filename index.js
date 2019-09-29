@@ -1,6 +1,6 @@
 // Code your solution here
 function findMatching (arr,s){
-  arr= arr.filter(function(v){
+  arr= arr.filter(v => {
     return v.toLowerCase() === s.toLowerCase();
   })
   return arr;
