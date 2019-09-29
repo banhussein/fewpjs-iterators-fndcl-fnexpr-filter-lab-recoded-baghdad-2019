@@ -1,27 +1,18 @@
-let arrayToLowerCase = []
-
-function findMatching(drivers, string) {
-    let even = drivers.filter(n => {
-        return n.toLowerCase() == string.toLowerCase();
-    });
-
-    return even
+// Code your solution here
+function findMatching (arr,s){
+  arr= arr.filter(function(v){
+    return v.toLowerCase() === s.toLowerCase();
+  })
+  return arr;
 }
-
-
-function fuzzyMatch(drivers, string) {
-    let even = drivers.filter(n => {
-        return n.search(string);
-    });
-
-    return even
+function fuzzyMatch(arr,s){
+   arr= arr.filter(function(v){
+    return v.toLowerCase().indexOf(s.toLowerCase()) === 0;
+  })
+  return arr;
 }
-
-
-function matchName(drivers, string) {
-    let even = drivers.filter(n => {
-        return n.name == string;
-    });
-
-    return even
+function matchName(arr,s) {
+  arr = arr.filter(function(v){
+    return v['name'] === s });
+    return arr;
 }
