@@ -1,7 +1,7 @@
 // Code your solution here
 function findMatching (arr,s){
   arr= arr.filter(v => {
-     return v.toLowerCase() == arr.toLowerCase();
+     return v.toLowerCase() == s.toLowerCase();
     });
 
     return arr
