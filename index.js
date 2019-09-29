@@ -1,9 +1,10 @@
 // Code your solution here
 function findMatching (arr,s){
   arr= arr.filter(v => {
-    return v.toLowerCase() === s.toLowerCase();
-  })
-  return arr;
+     return v.toLowerCase() == string.toLowerCase();
+    });
+
+    return arr
 }
 function fuzzyMatch(arr,s){
    arr= arr.filter(function(v){
